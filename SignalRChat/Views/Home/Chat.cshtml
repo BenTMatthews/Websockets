@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Chat";
+}
+<h2>Chat</h2>
+<div class="container">
+    <input type="text" id="message" />
+    <input type="button" id="sendMessage" value="Send" />
+    <input type="hidden" id="displayname" />
+    <p id="discussion"></p>
+    <input type="text" id="alert" />
+    <input type="button" id="sendAlert" value="Send Alert" />
+    <p>
+        <input type="text" id="whisper" />
+        <input type="button" id="sendWhisper" value="Send Random Whisper" />
+    </p>
+</div>
+@section scripts {   
+    <script src="~/Scripts/chatter_chat.js"></script>
+}
